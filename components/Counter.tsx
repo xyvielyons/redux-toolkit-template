@@ -8,7 +8,7 @@ import { decrement } from '@/store/slices/counterSlice';
 import { useAppDispatch, useAppSelector } from '@/store/hooks/hooks';
 export default function Counter() {
 
-const counter = useAppSelector((state)=>state.counter.value)
+const counter = useAppSelector((state)=>state.reducer.counter.value)
 const dispatch = useAppDispatch()
 
   function handleIncrement(){
